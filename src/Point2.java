@@ -44,7 +44,7 @@ public class Point2
 	
 	public double distance(Point2 p)
 	{
-		return Math.sqrt((this.x - p.getX())*(this.x - p.getX()) + (this.y - p.getY())*(this.y - p.getY()));
+		return Math.sqrt((x - p.getX())*(x - p.getX()) + (y - p.getY())*(y - p.getY()));
 	}
 	
 	public int distX(Point2 p)
