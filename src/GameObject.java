@@ -71,10 +71,10 @@ public class GameObject
 		image = i;
 	}
 	
-	public void setMovability(boolean m)
-	{
-		movable = m;
-	}
+//	public void setMovability(boolean m)
+//	{
+//		movable = m;
+//	}
 	
 	public boolean isMovable()
 	{
