@@ -1,5 +1,3 @@
-import javax.swing.border.MatteBorder;
-
 
 public class Vector2
 {
@@ -84,6 +82,32 @@ public class Vector2
 	public void setLocation(Point2 p)
 	{
 		location = p;
+	}
+	
+	public void setLocation(int x, int y)
+	{
+		location.setX(x);
+		location.setY(y);
+	}
+	
+	public double distance(Vector2 v)
+	{
+		return Math.sqrt(Math.pow((getX() - v.getX()), 2) + Math.pow((getY() - v.getY()), 2));
+	}
+	
+	public double squaredDistance(Vector2 v)
+	{
+		return (Math.pow((getX() - v.getX()), 2) + Math.pow((getY() - v.getY()), 2));
+	}
+	
+	public int distanceX(Vector2 v)
+	{
+		return getX() - v.getX();
+	}
+	
+	public int distanceY(Vector2 v)
+	{
+		return getY() - v.getY();
 	}
 	
 	public double getDegree()
