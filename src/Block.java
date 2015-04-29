@@ -12,7 +12,7 @@ public class Block extends GameObject
 	public Block()
 	{
 		super();
-		yDim = 100;
+		xDim = 100;
 		breakable = false;
 		visible = true;
 		hitCount = 0;
@@ -22,7 +22,7 @@ public class Block extends GameObject
 	public Block(int hitLimit)
 	{
 		super();
-		yDim = 100;
+		xDim = 100;
 		breakable = (hitLimit > 0);
 		visible = true;
 		hitCount = 0;
@@ -32,7 +32,7 @@ public class Block extends GameObject
 	public Block(int xDim, int yDim, Image i, Vector2 v)
 	{
 		super(xDim, yDim, i, v, false);
-		this.yDim = 100;
+		this.xDim = 100;
 		breakable = false;
 		visible = true;
 		hitCount = 0;
