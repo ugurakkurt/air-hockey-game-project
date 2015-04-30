@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class Vector2
+public class Vector2 implements Serializable
 {
 	private Point2 location;
 	private double xComponent;

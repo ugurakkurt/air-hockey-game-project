@@ -1,8 +1,9 @@
 
 import java.awt.Color;
 import java.awt.Image;
+import java.io.Serializable;
 
-public class GameObject
+public class GameObject implements Serializable
 {	
 	protected int xDim;
 	protected int yDim;
